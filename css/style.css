@@ -1,24 +1,44 @@
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; 
-  }
-
-body, h1, h2, h3, p {
-    margin: 0;
-    padding: 0;
-} */
-
-
 body{
  background-image: url(../images/img11.jpg);
 }
 
 body {
     margin: 0;
-    background-image: url(../images/img11.jpg); /* Adjust the path accordingly */
+    background-image: url(../images/img11.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    color: #000; /* Change to your preferred text color */
+    color: #000;
+}
+
+
+.navbar {
+    padding: 15px;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    margin-right: 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #f5f3f2;
+    font-weight: bold;
+    /* transition: color 0.3s ease; */
+}
+
+.nav-link:hover {
+    color: #007bff; 
 }
