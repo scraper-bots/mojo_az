@@ -28,9 +28,9 @@ margin: 0;
 .form__button {
     font: 500 1rem 'Quicksand', sans-serif;
 }
-/* .form--hidden {
+.form--hidden {
     display: none;
-} */
+}
 .form > *:first-child {
     margin-top: 0;
 }
@@ -40,6 +40,7 @@ margin: 0;
 .form__title {
     margin-bottom: 2rem;
     text-align: center;
+    color: #eeeeee;
 }
 .form__message {
     text-align: center;
