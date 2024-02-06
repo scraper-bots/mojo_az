@@ -7,18 +7,33 @@
     
     <link rel="stylesheet" href="../css/Login.css">
     <link rel="icon" href="../assets/favicon.ico" type="image/x-icon">
+
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if (username === "admin" && password === "admin") {
+                window.location.href = "AdminPanel.html";
+            } else {
+                alert("Invalid username or password. Please try again.");
+            }
+        }
+    </script>
 </head>
 <body>
     <div class="container">
-        <form class="form" id="login">
+        <form class="form" id="login" onsubmit="handleSubmit(event)">
             <h1 class="form__title">Login</h1>
             <div class="form__message form__message--error"></div>
             <div class="form__input-group">
-                <input type="text" class="form__input" autofocus placeholder="Username or email">
+                <input type="text" id="username" class="form__input" autofocus placeholder="Username or email">
                 <div class="form__input-error-message"></div>
             </div>
             <div class="form__input-group">
-                <input type="password" class="form__input" autofocus placeholder="Password">
+                <input type="password" id="password" class="form__input" autofocus placeholder="Password">
                 <div class="form__input-error-message"></div>
             </div>
             <button class="form__button" type="submit">Login</button>
