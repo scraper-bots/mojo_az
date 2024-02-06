@@ -16,6 +16,9 @@ body {
     background-size: cover;
 }
 
+.navigation-button{
+    color: #f0f7f7;
+}
 .container {
     flex: 1;
 }
